@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; GEMS-TAB | Guitar exercises, melodies &amp; scales in tablature</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="GEMS, guitar, exercises, melodies, scales, tab, tablature, 'GEMS in TAB'">
+	<META name="description" content="Guitar exercises, melodies &amp; scales in tablature.  Organized progressively in twelve levels.">	
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+<!--
+	<meta name="google-site-verification" content="jM2B3HYwo_3AEsh7O01JUAD1_vblND-URrSru8qlE9g" />
+	<meta name="msvalidate.01" content="122A310580675420AD2FB259C2680F3F" />
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101258268);</script>
+	<script async src="//static.getclicky.com/js"></script>
+-->
+
+<!-- Clarity tracking code for https://gems-tab.github.io/ -->
+<!--
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "4skplj4tig");
+</script>
+-->	
+<style>
+/* Style the tab */
+.sidetitle {
+	height: 100%;
+	width: 16.66%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #321414;
+	color: #fff;
+	<!-- overflow-x: hidden; -->
+	padding: 1vw;
+	float: left;
+	font-family: 'Clicker Script', cursive;
+}
+
+.tab {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 15%;
+	border: none;
+	<!-- background-color: #f1f1f1; -->
+	background-color: #321414;
+	width: 16.66%;
+	height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	display: block;
+	background-color: inherit;
+	color: #dba5a5;
+	padding: 2vh;
+	width: 100%;
+	height: 6.6%;
+	outline-style: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: clamp(11px, 2vw, 2vw);
+	font-family: 'Marck Script', cursive;
+	border: none;
+	opacity: 0.85;
+	<!-- border-bottom: 3px solid #555D50; -->
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	opacity: 1;
+	color: #fff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+	background-color: inherit;
+	color: #240e0e;
+	opacity: 1;
+}
+
+/* Style the tab content */
+.tabcontent {
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 30%;
+	padding: 1vh 4vw;
+	width:  auto;
+	height:  100%;
+	border-left: none;
+	overflow: scroll;
+}
+
+#Pearl{
+	background-color: #fefbfb;
+	border-color: #F5DDDA;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+
+}
+#defaultOpen{
+	background-color: #321414;
+	border-bottom: 3px solid #F5DDDA;
+}
+
+#defaultOpen.active{
+	background-color: #F5DDDA;
+	border-bottom: 3px solid #F5DDDA;
+}
+
+#Opal{
+	background-color: #e5f7f4;
+	border-color: #6ED1B4;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Opalbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #6ED1B4;
+}
+#Opalbutton.active{
+	background-color: #6ED1B4;
+	border-bottom: 3px solid #6ED1B4;
+}
+
+#Turquoise{
+	background-color: #eff9f8;
+	border-color: #45B8AC;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Turquoisebutton{
+	background-color: #321414;
+	border-bottom: 3px solid #45B8AC;
+}
+#Turquoisebutton.active{
+	background-color: #45B8AC;
+	border-bottom: 3px solid #45B8AC;
+}
+
+#Peridot{
+	background-color: #f6f9f1;
+	border-color: #7B9344;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Peridotbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #7B9344;
+}
+#Peridotbutton.active{
+	background-color: #7B9344;
+	border-bottom: 3px solid #7B9344;
+}
+#Garnet{
+	background-color: #f6e6e8;
+	border-color: #943543;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Garnetbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #943543;
+}
+#Garnetbutton.active{
+	background-color: #943543;
+	border-bottom: 3px solid #943543;
+}
+#Amethyst{
+	background-color: #f4ecf2;
+	border-color: #824B77;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Amethystbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #824B77;
+}
+#Amethystbutton.active{
+	background-color: #824B77;
+	border-bottom: 3px solid #824B77;
+}
+#Aquamarine{
+	background-color: #e3eff4;
+	border-color: #9DC6D8;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Aquamarinebutton{
+	background-color: #321414;
+	border-bottom: 3px solid #9DC6D8;
+}
+#Aquamarinebutton.active{
+	background-color: #9DC6D8;
+	border-bottom: 3px solid #9DC6D8;
+}
+#Emerald{
+	background-color: #e6fff9;
+	border-color: #009874;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Emeraldbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #009874;
+}
+#Emeraldbutton.active{
+	background-color: #009874;
+	border-bottom: 3px solid #009874;
+}
+#Topaz{
+	background-color: #fbf3ed;
+	border-color: #D3833D;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Topazbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #D3833D;
+}
+#Topazbutton.active{
+	background-color: #D3833D;
+	border-bottom: 3px solid #D3833D;
+}
+#Sapphire{
+	background-color: #e4f5fb;
+	border-color: #126180;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Sapphirebutton{
+	background-color: #321414;
+	border-bottom: 3px solid #126180;
+}
+#Sapphirebutton.active{
+	background-color: #126180;
+	border-bottom: 3px solid #126180;
+}
+#Ruby{
+	background-color: #fddbde;
+	border-color: #bb0a1e;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Rubybutton{
+	background-color: #321414;
+	border-bottom: 3px solid #bb0a1e;
+}
+#Rubybutton.active{
+	background-color: #bb0a1e;
+	border-bottom: 3px solid #bb0a1e;
+}
+#Diamond{
+	background-color: rgba(255, 255, 255, .15);  
+ 	backdrop-filter: blur(5px);
+	border-color: rgba(255, 255, 255, .15);
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Diamondbutton{
+	background-color: #321414;  
+ 	backdrop-filter: blur(5px);
+	border-bottom: 3px solid white;
+}
+#Diamondbutton.active{
+	background-color: rgba(255, 255, 255, .15);  
+ 	backdrop-filter: blur(5px);
+	border-bottom: 3px solid rgba(255, 255, 255, .15);
+}
+
+#Pragmatic{
+	background-color: #f3ebe1;
+	border-color: #b08d57;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+
+#Theory{
+	background-color: #fefcf9;
+	border-color: #D4AF37;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Theorybutton{
+	background-color: #321414;
+	border-bottom: 3px solid #D4AF37;
+}
+#Theorybutton.active{
+	background-color: #D4AF37;
+	border-bottom: 3px solid #D4AF37;
+}	
+#Index{
+	background-color: #f3ebe1;
+	border-color: #b08d57;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+#Indexbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #b08d57;
+	<!-- #b04646; -->
+}
+#Indexbutton.active{
+	background-color: #b08d57;
+	border-bottom: 3px solid #b08d57;
+}	
+
+</style>
+
+</HEAD>
+<BODY STYLE="background-color: #321414;">
+<DIV class="sidetitle">
+	<H1>
+	<SPAN STYLE="font-size: 10vh;">G</SPAN>&nbsp;uitar<BR />
+	<SPAN STYLE="font-size: 10vh;">E</SPAN>&nbsp;xercises<BR />
+	<SPAN STYLE="font-size: 10vh;">M</SPAN>&nbsp;elodies<BR />
+	<SPAN STYLE="font-size: 10vh;">S</SPAN>&nbsp;cales<BR />
+	</H1>
+</DIV>
+<div class="tab">
+	<!-- <button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button> -->
+	<button class="tablinks" onclick="openLevel(event, 'Index')" id="Indexbutton">&#x1f50d;Index</button>
+	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
+	<button class="tablinks" onclick="openLevel(event, 'Opal')" id="Opalbutton">&#8199;2 Opal</button>
+	<button class="tablinks" onclick="openLevel(event, 'Turquoise')"  id="Turquoisebutton">&#8199;3 Turquoise</button>
+	<button class="tablinks" onclick="openLevel(event, 'Peridot')" id="Peridotbutton">&#8199;4 Peridot</button>
+	<button class="tablinks" onclick="openLevel(event, 'Garnet')" id="Garnetbutton">&#8199;5 Garnet</button>
+	<button class="tablinks" onclick="openLevel(event, 'Amethyst')" id="Amethystbutton">&#8199;6 Amethyst</button>
+    <button class="tablinks" onclick="openLevel(event, 'Aquamarine')" id="Aquamarinebutton">&#8199;7 Aquamarine</button>
+	<button class="tablinks" onclick="openLevel(event, 'Emerald')"  id="Emeraldbutton">&#8199;8 Emerald</button>
+	<button class="tablinks" onclick="openLevel(event, 'Topaz')" id="Topazbutton">&#8199;9 Topaz</button>
+	<button class="tablinks" onclick="openLevel(event, 'Sapphire')" id="Sapphirebutton">10 Sapphire</button>
+	<button class="tablinks" onclick="openLevel(event, 'Ruby')" id="Rubybutton">11 Ruby</button>
+	<button class="tablinks" onclick="openLevel(event, 'Diamond')"  id="Diamondbutton">12 Diamond</button>
+	<button class="tablinks" onclick="openLevel(event, 'Pragmatic')" id="Indexbutton">&#8199;&#8199; Pragmatic</button>
+	<button class="tablinks" onclick="openLevel(event, 'Theory')" id="Theorybutton">&#8199;&#8199; Theory</button>
+</div>	
+
+<DIV ID="Pearl" CLASS="tabcontent">
+	<h3>Pearl Level</h3>
+	<SPAN CLASS="Pedagogy">
+	<HR>
+	<P>
+	This level will introduce the guitar student to the following:<BR />
+	<UL>
+		<LI>Open string, unfretted, chords</LI>
+		<LI>One fingered chords</LI>
+		<LI>Notes played in the fret range between the first (&#8544;) and fourth (&#8547;) frets</LI>
+	</UL>
+	</P>
+	<HR>
+	</SPAN>
+	<OL TYPE="1">
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/Ex1.html">Exercise 1</a>
+			<SPAN CLASS="Pedagogy"><P>An introduction to the top three open strings.  The student should focus upon right hand technique.</P>
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK><STRONG>e&prime;</STRONG></MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK><STRONG>b</STRONG>&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK><STRONG>g</STRONG>&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 -->&nbsp;&nbsp;&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 -->&nbsp;&nbsp;&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 -->&nbsp;&nbsp;&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>
+			</SPAN><!-- CLASS Pedagogy -->
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/VeryBasicBlues.html">Blues Progression:  Very Basic<SPAN CLASS="Detail">&nbsp;12-bar</SPAN></A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to the bottom three open strings.  The student should focus upon right hand technique.</P>
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK><STRONG>d</STRONG>&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK><STRONG>A</STRONG>&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK><STRONG>E</STRONG>&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>
+			</SPAN><!-- CLASS Pedagogy -->	
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/OpenStringChords.html">Simple Chords with Complicated Names</A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to open string, unfretted, chords.  The student should focus upon right hand technique.</P>
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK>e&prime;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK>b&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK>g&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK>E&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>		
+		<HR>
+		</SPAN>	<!-- CLASS Pedagogy -->	
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/Chord00000x.html">So What Chord</A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to a particular five note chord voicing used in jazz harmony.  The student should focus upon right hand technique.</P>
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK>b&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK>g&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK>E&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>		
+		<HR>
+		</SPAN>	<!-- CLASS Pedagogy -->	
+	</LI>
+	<BR />
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/VeryBasicDooWop.html">Doo-Wop Progression:  Very Basic<SPAN CLASS="Detail">&nbsp;8-bar</SPAN></A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to the fretted note a.  The student should focus upon left finger technique.</P>
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK>b&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK>g&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;<STRONG>a</STRONG>&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>
+		</SPAN><!-- CLASS Pedagogy -->
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/JazzCat.html">Front Door Progression:  Very Basic</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/VeryBasicBackDoor.html">
+		Backdoor Progression:  Very Basic
+		</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/PentatonicScaleGMajor.html">
+		<SPAN CLASS="Detail">Pentatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in G&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=80.</SPAN>
+		</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/TwinkleTwinkleLittleStar.html">Ah! vous dirai-je, maman<SPAN CLASS="Detail">&nbsp;(Twinkle, Twinkle, Little Star)</SPAN></A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK>e&prime;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK>b&nbsp;</MARK>&#x255F;<MARK>&#x2500;c&prime;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;d&prime;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK>g&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;a&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>	
+		</SPAN><!-- CLASS Pedagogy -->	
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+			<A HREF="./Pearl/ScaleGMajor.html">
+				<SPAN CLASS="Detail">Diatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in G&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=80.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/RoyalRoadProgression.html">Royal Road Progression:  Very Basic</A>
+		</SPAN>
+	</LI>	
+	<BR />
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/JingleBellsChorus.html">Jingle Bells Chorus</A>
+		</SPAN>
+	</LI>	
+	<BR />		
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/GoodMorningToAll.html">Good Morning to All<SPAN CLASS="Detail">&nbsp;(Happy Birthday to You)</SPAN></A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/ByeBabyBunting.html">Bye, baby Bunting</A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;<MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;<STRONG>e</STRONG>&#x253C;&#x2500;&#x2500;<STRONG>f</STRONG>&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;<STRONG>c</STRONG>&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>	
+			</SPAN><!-- CLASS Pedagogy -->	
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/VeryBasicHopscotch.html">Hopscotch Progression:  Very Basic <SPAN CLASS="Detail">&nbsp;8-bar</SPAN></A>
+		</SPAN>
+		<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK><MARK>&#x255F;&#x2500;c&prime;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;<MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK>g&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;a&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK><MARK>&#x2500;&#x2500;f&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;c&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>	
+		</SPAN><!-- CLASS Pedagogy -->	
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+			<A HREF="./Pearl/ScaleCMajor.html">
+				<SPAN CLASS="Detail">Diatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in C&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=80.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/TriadCoverG.html">C<SPAN CLASS="Detail">&nbsp;Major/G Triad</SPAN> Chord</a>
+		</SPAN>
+	</LI>
+	<BR/>	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+				<A HREF="./Pearl/PentatonicScaleDMajor.html">
+					<SPAN CLASS="Detail">Pentatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in D&nbsp;<SPAN CLASS="Detail">major</SPAN>
+				</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/PachelbelProgression.html">Pachelbel Progression</a>
+		</SPAN>
+	</LI>
+	<BR/>
+	<LI STYLE="color: #F5DDDA">
+	<SPAN STYLE="color: black">
+	<A HREF="./Pearl/BluesWith5ths.html">Blues Progression:  12-bar in fifths</A>
+	</SPAN>
+		<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;a&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;e&#x253C;</MARK><MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;B&#x253C;</MARK><MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK>E&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>	
+			</SPAN><!-- CLASS Pedagogy -->
+		</LI>
+	<BR />	
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/Chordx2000x.html">G<SPAN CLASS="Detail">&nbsp;Major over B</SPAN>&nbsp;Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/ChordIntroEMinor7.html">Em7 Chord</A>
+		</SPAN>
+	</LI>
+	<BR />
+		<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/SouthDetroitProgression.html">South Detroit Progression:  Very Basic</A>
+		</SPAN>
+	</LI>	
+	<BR />
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/AmazingGrace01.html">Amazing Grace</A>
+		</SPAN>
+	</LI>
+	<DIV STYLE="opacity: 0">
+		<BR />	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Deriving the Dameron Turnaround</SPAN></LI>
+		<BR />
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in A minor harmonic</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in A minor melodic</SPAN></LI>
+		<BR />
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in E minor harmonic</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in E minor melodic</SPAN></LI>
+		<BR />
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Dorian mode 1&times;8<SUP>va</SUP> in D</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Melody of Drunken Sailor</SPAN></LI>
+		<BR />
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Excerpt from a Little Night Music by Wolfgang Amadeus Mozart</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Dance<SPAN CLASS="Detail">&nbsp;by Hans Neusidler</SPAN></SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Yankee Doodle</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Melodic Interval Exercise</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Aura Lee</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Down in the Valley</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; On Top of Old Smokey</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; We Three Kings of Orient Are</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Plaisir D'Amour</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; When the Saints Go Marching In</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Au Clair de la Lune</SPAN></LI>
+
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Frere Jacques</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Cotton Mill Girls</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Shalom, Chaverim</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Delia</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Red River Valley</SPAN></LI>
+		<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Ode to Joy</SPAN></LI>
+	</DIV>
+</OL>
+</DIV>
+
+<DIV ID="Opal" CLASS="tabcontent">
+  <H3>Opal Level</H3>
+  	<SPAN CLASS="Pedagogy">
+	<HR>
+	<P>
+	This level will introduce the guitar student to the following:<BR />
+	<UL>
+		<LI>Two fingered chords</LI>
+		<LI>Notes played in the fret range up to the fifth (&#8548;) fret</LI>
+	</UL>
+	</P>
+	<HR>
+	</SPAN>
+	<OL TYPE="1">
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+			<A HREF="./Opal/ChromaticScaleOnD.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;on D<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=100.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+			<A HREF="./Opal/ScaleCMajorMM100.html">
+				<SPAN CLASS="Detail">Tremolando Diatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">, 1&times;8<SUP>ve</SUP>,</SPAN>&nbsp;in C&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">&#32;Played with eighth notes in 4/4 meter at MM=56.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/HappyBirthday.html">Happy Birthday to You</A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/JingleBells.html">Jingle Bells<SPAN CLASS="Detail">&nbsp;by James Lord Pierpont</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/CMajorChords2Fingers.html">C<SPAN CLASS="Detail">&nbsp;Major</SPAN>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+			<A HREF="./Opal/C3G3.html">C3-G3</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+			&iquest; Simple Broken Triads
+		</SPAN>
+	</LI>
+	<SPAN CLASS="Detail"><BR /></SPAN><!-- Line break when details are shown. -->
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/ChordIntroEMinor7.html">G<SUP>7</SUP><SPAN CLASS="Detail">/B</SPAN>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Pearl/ChordIntroEMinor7.html">G<SUP>7sus4</SUP><SPAN CLASS="Detail">/D</SPAN>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/BransleDePoitou.html">Bransle de Poitou</A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/OpalCountryside.html">Textured Countryside of Opal Stones</A></SPAN></LI>
+	<BR />
+		<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+				<A HREF="./Opal/PentatonicScaleDMajorTremolando.html">
+					<SPAN CLASS="Detail">Pentatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in D&nbsp;<SPAN CLASS="Detail">major</SPAN>
+				</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<a href="./Opal/OldMacDonald.html">Old MacDonald Had a Farm</a>
+		</SPAN>
+		<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;e&#x253C;</MARK><MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK><MARK>&#x2500;<STRONG>f&#x266f;</STRONG>&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;<MARK>&#x2500;&#x2500;<STRONG>B</STRONG>&#x253C;</MARK><MARK CLASS="Attained">&#x2500;&#x2500;&#x2500;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2559;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>	
+			</SPAN><!-- CLASS Pedagogy -->		
+	</LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black">Diatonic scale 1&times;8<SUP>va</SUP> in D major</SPAN></LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/Chordx02020.html">A<SUP>7</SUP>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/VsiSoVenciVejli.html">Vsi so venci vejli</A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/ThisLittleLightOfMine.html">This Little Light of Mine</A></SPAN></LI>
+	<BR />
+	<BR/>	
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/12barBluesWith5ths151.html">Blues Progression:  12-bar with three-note fifths</A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><a href="./Opal/BluesWith5ths6ths.html">Blues Progression:  12-bar in fifths and sixths</a></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in F major<SPAN CLASS="Detail">.&nbsp;MM=100.&nbsp;4/4 meter.</SPAN></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/RoyalRoadPowerChords.html">Royal Road Progression: with two-note fifths</A></SPAN>	
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/OCanada.html">O Canada</A></SPAN>
+			<SPAN CLASS="Pedagogy">
+			<P CLASS="Range">
+			<!-- 0 -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII<BR />
+			<!-- 1 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x2553;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+			<!-- 2 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 3 --><MARK CLASS="Attained">&nbsp;&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 4 --><MARK>d&nbsp;</MARK>&#x255F;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;<MARK>e&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 5 --><MARK>A&nbsp;&#x255F;&#x2500;B&#x266d;&#x253C;&#x2500;B&#x266e;&#x253C;&#x2500;&#x2500;c&#x253C;&#x2500;c&#x266f;&#x253C;</MARK>&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+			<!-- 6 --><MARK>E&nbsp;&#x2559;&#x2500;&#x2500;F&#x2534;</MARK>&#x2500;&#x2500;&#x2500;&#x2534;<MARK>&#x2500;&#x2500;G&#x2534;</MARK>&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+			</P>
+			<HR>
+			</SPAN><!-- CLASS Pedagogy -->	
+	</LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+			<A HREF="./Opal/ScaleGMajor28veMM100.html">
+				<SPAN CLASS="Detail">Diatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in G&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=100.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<SPAN CLASS="Detail"><BR /></SPAN><!-- Line break when details are shown. -->
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<a href="./Opal/ChordGMajor2Finger.html">G<SPAN CLASS="Detail">&nbsp;Major</SPAN> Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<a href="./Opal/Chordx20003.html">G<SPAN CLASS="Detail">&nbsp;Major over B</SPAN>&nbsp;Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<a href="./Opal/Chordxx0013.html">G<SPAN CLASS="Detail">&nbsp;</SPAN>sus<SPAN CLASS="Detail">pended fourth over D</SPAN> Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Country Dance</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/MwanaWaNnyabo.html">Mwana wa Nnyabo</A></SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/WeWishYouMerryChristmas.html">We Wish You a Merry Christmas</A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/1stExerciseOnEString.html">
+		Übungen auf der E saite Nr.1<SPAN CLASS="Detail">(First Exercise on the E string)&nbsp;by J.K. Mertz</SPAN>
+		</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/2ndExerciseOnEString.html">
+		Übungen auf der E saite Nr.2<SPAN CLASS="Detail">(Second Exercise on the E string)&nbsp;by J.K. Mertz</SPAN>
+		</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/Libro1Leccion46.html">Libro 1 Leccion 46</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/Chordxx301x.html">Csus<SPAN CLASS="Detail">4/F Inverted</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<BR />
+		<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/Am7.html">Am<SUP>7</SUP>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/AmazingGrace02.html">Amazing Grace</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Wiegenlied<SPAN CLASS="Detail">.&nbsp;Op. 49, No. 4, by Johannes Brahms (Brahms' Lullaby)</SPAN></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Land of the Silver Birch</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Hold On</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Dorian mode 1&times;8<SUP>va</SUP> in A</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Melody of Scarborough Fair</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in B minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in B minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in E minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in E minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in D major</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in F major</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in G major</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in B minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in B minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in E minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in E minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in G major</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in A minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in A minor melodic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in E minor harmonic</SPAN></LI>
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 1&times;8<SUP>va</SUP> in E minor melodic</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Tom Dooley</SPAN></LI>
+	</OL>
+</DIV>
+
+<div id="Turquoise" class="tabcontent">
+  <H3>Turquoise Level</H3>
+    <SPAN CLASS="Pedagogy">
+	<HR>
+	<P>
+	This level will introduce the guitar student to the following:<BR />
+	<UL>
+		<LI>Three fingered chords</LI>
+		<LI>Notes played in the fret range up to the sixth (&#8549;) fret</LI>
+	</UL>
+	</P>
+	<HR>
+	</SPAN>
+	<OL TYPE="1">
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+			<A HREF="./Turquoise/ChromaticScaleOnA.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;on A<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with quarter notes in 4/4 meter at MM=120.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroEMajor.html">E<SPAN CLASS="Detail">&nbsp;Major</SPAN>&nbsp;Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroAMajor.html">A<SPAN CLASS="Detail">&nbsp;Major</SPAN>&nbsp;Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/12barBluesV7.html">Blues Progression</A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in C major</SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/Chord320001.html">G7&nbsp;Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/Chordx3301x.html">Csus<SPAN CLASS="Detail">4</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/Chord032010.html">C<SPAN CLASS="Detail">/E&nbsp;Major</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroCMajor.html">C<SPAN CLASS="Detail">&nbsp;Major</SPAN>&nbsp;Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN CLASS="NoLink">&iquest; Gigue<SPAN CLASS="Detail">&nbsp;by Jan Antonín Losy</SPAN></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroAMinor.html">A minor Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/3rdExerciseOnEString.html">
+		Übungen auf der E saite Nr.3<SPAN CLASS="Detail">(Third Exercise on the E string)&nbsp;by J.K. Mertz</SPAN>
+		</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN CLASS="NoLink">&iquest; Blues scale 1&times;8<SUP>va</SUP> in D major</SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroDMajor.html">D Major Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/SlapExercise.html">Slap Strum Exercise</A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/MidnightSpecial.html">Midnight Special</A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN CLASS="NoLink">&iquest; Blues scale 1&times;8<SUP>va</SUP> in F major</SPAN></LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/FMajorChords3Fingers.html">F&nbsp;<SPAN CLASS="Detail">Major&nbsp;Triad&nbsp;</SPAN>Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/Chordxxx211.html">F&nbsp;<SPAN CLASS="Detail">Major/A&nbsp;Inverted&nbsp;Triad&nbsp;</SPAN>Chord</A></SPAN></LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/Chordxx3210.html">Fmaj7 Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/RoyalRoadTriads.html">Royal Road Progression of Triads</A></SPAN>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><a href="./Turquoise/IsTheBy.html">I's The B'y</a></SPAN></LI>
+	<BR />
+		<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/Chordxx0231.html">D<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor</SPAN>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+			<A HREF="./Turquoise/ScaleGMajorMM120.html">
+				<SPAN CLASS="Detail">Diatonic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in G&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">&#32;Played with quarter notes in 4/4 meter at MM=120.</SPAN>
+			
+			</A>
+		</SPAN>
+	</LI>
+	<SPAN CLASS="Detail"><BR /></SPAN><!-- Line break when details are shown. -->
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<a href="./Turquoise/ChordGMajor.html">G<SPAN CLASS="Detail">&nbsp;Major</SPAN>&nbsp;Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<a href="./Turquoise/Chordx20033.html">G<SPAN CLASS="Detail">&nbsp;Major over B</SPAN>&nbsp;Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/D7.html">D7 Chord</A></SPAN></LI>
+	<SPAN CLASS="Detail"><BR /></SPAN><!-- Line break when details are shown. -->
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/Ejercicio.html">Ejercicio<SPAN CLASS="Detail">&nbsp;by José Ferrer Esteve de Fujadas</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/SilentNight.html">Stille Nacht, Heilige Nacht<SPAN CLASS="Detail">&nbsp;(Silent Night) by Franz Xaver Gruber</SPAN></A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ShineOnMe.html">Let Your Light Shine on Me</A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/Chord022030.html">Em7&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/Chordx03210.html">Fmaj7<SPAN CLASS="Detail">A&nbsp;Inverted</SPAN>&nbsp;Chord</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/RoyalRoadRhythms.html">Royal Road Progression: Rhythm Strums</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #45B8AC">
+		<SPAN STYLE="color: black">
+		<A HREF="./Turquoise/AmazingGrace03.html">Amazing Grace</A>
+		</SPAN>
+	</LI>	
+	</OL>
+</div>
+
+<div id="Peridot" class="tabcontent">
+  <H3>Peridot Level</H3>
+    <SPAN CLASS="Pedagogy">
+	<HR>
+	<P>
+	This level will introduce the guitar student to the following:<BR />
+	<UL>
+		<LI>Four fingered chords</LI>
+		<LI>Notes played in the fret range up to the seventh (&#8550;) fret</LI>
+	</UL>
+	</P>
+	<HR>
+	</SPAN>
+	<OL>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Chromatic scale 2&times;8<SUP>va</SUP> on A</SPAN></LI>
+	<BR />
+		<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+			<A HREF="./Peridot/ChordDMajOverFsharp.html">
+				D<SPAN CLASS="Detail">&nbsp;Major/F&sharp;</SPAN>&nbsp;Chord
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+		<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+			<A HREF="./Peridot/Chordxx3213.html">
+				F<SUP>add9</SUP> Chord
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+			<A HREF="./Peridot/SlurScalePentatonicGMajor.html">
+				<SPAN CLASS="Detail">Slur&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in G<SPAN CLASS="Detail">&nbsp;major pentatonic.</SPAN><SPAN CLASS="Detail">Played with eighth notes in 4/4 meter at MM=56.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+		<a href="./Peridot/ChordGMajor4Finger.html">G<SPAN CLASS="Detail">&nbsp;Major</SPAN> Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+		<a href="./Peridot/Chord330013.html">G<SPAN CLASS="Detail">&nbsp;</SPAN>sus<SPAN CLASS="Detail">pended fourth</SPAN> Chord</a>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+			<A HREF="./Peridot/ChordCoverG.html">
+				C<SPAN CLASS="Detail">&nbsp;Major/G</SPAN>&nbsp;Chord
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #7B9344">
+		<SPAN STYLE="color: black">
+			<A HREF="./Peridot/BluesScaleAFlat.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;1&times;8<SUP>va</SUP></SPAN>&nbsp;in A<SUP>&#x266d;</SUP><SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with eighth notes in 4/4 meter at MM=69.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Blues scale 1&times;8<SUP>va</SUP> in C major</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Minuet by Robert de Viseé</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Prelude in C Major by George Frideric Handel</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Blues scale 1&times;8<SUP>va</SUP> in D minor</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Españoleta<SPAN CLASS="Detail">&nbsp;by Gaspar Sanz</SPAN></SPAN></LI>
+	<BR />	
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in D major</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in B<SUP>&#x266d;</SUP> major</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in E major</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in B minor harmonic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in B minor melodic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor harmonic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor melodic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in G minor harmonic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in G minor melodic</SPAN></LI>
+	<LI STYLE="color: #7B9344"><SPAN CLASS="NoLink">&iquest; My Grandfather's Clock (fingerstyle)</SPAN></LI>
+</div>
+
+<div id="Garnet" class="tabcontent">
+	<H3>Garnet Level</H3>
+	<SPAN CLASS="Pedagogy">
+	<HR>
+	<P>
+	This level will introduce the guitar student to the following:<BR />
+	<UL>
+		<LI>Partial barre chords</LI>
+		<LI>Notes played in the fret range up to the eighth (&#8551;) fret</LI>
+	</UL>
+	</P>
+	<HR>
+	</SPAN>
+  <OL>
+  <LI STYLE="color: #943543"><SPAN CLASS="NoLink">&iquest; Chromatic scale 2&times;8<SUP>va</SUP> on B</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #943543">
+		<SPAN STYLE="color: black">
+			<A HREF="./Garnet/BluesScaleA.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in A&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with triplet eighth notes in 4/4 meter at MM=69.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/ChordIntroAbMajor.html">A&flat; Major Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/ChordIntroFMajor.html">F&nbsp;<SPAN CLASS="Detail">Major&nbsp;</SPAN>Chord<SPAN CLASS="Detail">.&nbsp;First Position with two string barre.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/Chordx03211.html">F&nbsp;<SPAN CLASS="Detail">Major/A&nbsp;Inverted&nbsp;</SPAN>Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/Chordx33011.html">Csus<SPAN CLASS="Detail">4</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/Chord303211.html">G9sus<SPAN CLASS="Detail">4</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/ChordGm.html">G<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor</SPAN>&nbsp;Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/Chord303211.html">Stairway Chord</A></SPAN></LI>
+	<LI STYLE="color: #943543"><SPAN STYLE="color: black"><A HREF="./Garnet/ChordIntroHendrix.html">Hendrix Chord</A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #824B77"><SPAN CLASS="NoLink">&iquest; Divertimento<SPAN CLASS="Detail">, op.40, no. 11 by Mauro Giuliani</SPAN></SPAN></LI>
+	</OL>
+</div>
+
+<div id="Amethyst" class="tabcontent">
+	<H3>Amethyst Level</H3>
+  	<SPAN CLASS="Pedagogy">
+		<HR>
+		<P>
+		This level will introduce the guitar student to the following:<BR />
+		<UL>
+			<LI>Full barre chords</LI>
+			<LI>Notes played in the fret range up to the ninth (&#8552;) fret</LI>
+		</UL>
+		</P>
+		<HR>
+	</SPAN>
+  <OL>
+	<LI STYLE="color: #824B77"><SPAN CLASS="NoLink">&iquest; Chromatic scale 2&times;8<SUP>va</SUP> on C</SPAN></LI>
+  	<BR />
+	<LI STYLE="color: #824B77">
+		<SPAN STYLE="color: black">
+			<A HREF="./Amethyst/FMajorBarreChord.html">
+				F Major Chord
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #824B77">
+		<SPAN STYLE="color: black">
+			<A HREF="./Amethyst/BluesScaleBflat.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in B&#x266d;&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=69.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #824B77"><SPAN CLASS="NoLink">&iquest; Souvenir du Quinze Août</SPAN></LI>
+  </OL>
+</div>
+
+<div id="Aquamarine" class="tabcontent">
+  <h3>Aquamarine Level</h3>
+  	<SPAN CLASS="Pedagogy">
+		<HR>
+		<P>
+		This level will introduce the guitar student to the following:<BR />
+		<UL>
+			<LI>Stretch chords (chord shapes wider than four frets)</LI>
+			<LI>Notes played in the fret range up to the tenth (&#8553;) fret</LI>
+		</UL>
+		</P>
+		<HR>
+	</SPAN>
+	<OL>
+	<LI STYLE="color: #9DC6D8"><SPAN CLASS="NoLink">&iquest; Chromatic scale 2&times;8<SUP>va</SUP> on D</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #9DC6D8">
+		<SPAN STYLE="color: black">
+			<A HREF="./Aquamarine/ChordDMajorOverFsharpSeventhPosition.html">
+				D<SPAN CLASS="Detail">&nbsp;Major/F&sharp;</SPAN>&nbsp;Chord
+			</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #9DC6D8">
+		<SPAN STYLE="color: black">
+			<A HREF="./Aquamarine/Op6No1.html">
+				Etude<SPAN CLASS="Detail">, op.6, no. 1 by Fernando Sor</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #9DC6D8">
+		<SPAN STYLE="color: black">
+			<A HREF="./Aquamarine/BluesScaleB.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in B<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=76.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #9DC6D8">
+		<SPAN STYLE="color: black">
+			<A HREF="./Aquamarine/ChordIntroSpyChord.html">
+				<SPAN CLASS="Detail">Introducting the&nbsp;</SPAN>Spy Chord
+			</A>
+		</SPAN>
+	</LI>
+	</OL>
+</div>
+<div id="Emerald" class="tabcontent">
+	<h3>Emerald Level</h3>
+	<SPAN CLASS="Pedagogy">
+		<HR>
+		<P>
+		This level will introduce the guitar student to the following:<BR />
+		<UL>
+			<LI>Notes played in the fret range up to the seventeenth (&#8553;&#8550;) fret</LI>
+		</UL>
+		</P>
+		<HR>
+	</SPAN>
+  <OL>
+	<LI STYLE="color: #009874"><SPAN CLASS="NoLink">&iquest; Chromatic scale 3&times;8<SUP>va</SUP> on A</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #009874">
+		<SPAN STYLE="color: black">
+			<A HREF="./Emerald/BluesScaleC.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in C&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=84.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #009874"><SPAN CLASS="NoLink">&iquest; Scale in A m</SPAN></LI>
+	<LI STYLE="color: #009874">
+		<SPAN STYLE="color: black">
+			<A HREF="./Emerald/Lesson20.html">
+				Op.31, No. 20<SPAN CLASS="Detail">, by Fernando Sor</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #009874">
+		<SPAN STYLE="color: black">
+			<A HREF="./Emerald/Lesson20Var1.html">
+				L20.1<SPAN CLASS="Detail">, Variation 1 of Sor's op.31, no. 20</SPAN>
+			</A>
+	</SPAN>
+	</LI>
+	<LI STYLE="color: #009874">
+		<SPAN STYLE="color: black">
+			<A HREF="./Emerald/Lesson20Var2.html">
+				L20.2<SPAN CLASS="Detail">, Variation 2 of Sor's op.31, no. 20</SPAN>
+			</A>
+	</SPAN>
+	</LI>
+  </OL>
+</div>
+
+<div id="Topaz" class="tabcontent">
+	<h3>Topaz Level</h3>
+	<SPAN CLASS="Pedagogy">
+		<HR>
+		<P>
+		This level will introduce the guitar student to the following:<BR />
+		<UL>
+			<LI>Notes played in the fret range up to the eighteenth (&#8553;&#8551;) fret</LI>
+		</UL>
+		</P>
+		<HR>
+	</SPAN>
+	<OL>
+	<LI STYLE="color: #D3833D">
+		<SPAN STYLE="color: black">
+			<A HREF="./Topaz/ScaleChromaticOnAsharp.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;on A<SUP>&sharp;</SUP><SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=88.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR /> 
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Blues scale 2&times;8<SUP>va</SUP> in D major ?</SPAN></LI>	
+	<LI STYLE="color: #D3833D">
+		<SPAN STYLE="color: black">
+				<A HREF="./Topaz/BWV1007.html">
+					BWV 1007 Prelude
+				</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #D3833D">
+		<SPAN STYLE="color: black">
+			<A HREF="./Topaz/BluesScaleDb.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in D&#x266d;&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=96.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+    <LI STYLE="color: #D3833D">
+		<SPAN STYLE="color: black">
+			<A HREF="./Topaz/Zganec91.html">		
+				<SPAN LANG="hr" STYLE="font-style: italic;">Ej musiče</SPAN><SPAN CLASS="Detail">, Croatian folk song, Žganec No.91</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+
+	<BR />
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in E major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in B major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in F major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in B<SUP>&#x266d;</SUP> major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in A<SUP>&#x266d;</SUP> major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in G<SUP>&#x266f;</SUP> minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in G<SUP>&#x266f;</SUP> minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 2&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in G minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in G minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in F minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale 3&times;8<SUP>va</SUP> in F minor melodic</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in E major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in B major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in C<SUP>&#x266f;</SUP> minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in G<SUP>&#x266f;</SUP> minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in G<SUP>&#x266f;</SUP> minor melodic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, tremolo picking, 2&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, compound triplets slurred, 1&times;8<SUP>va</SUP> in C major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, compound triplets slurred, 1&times;8<SUP>va</SUP> in A major</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid thirds, 2&times;8<SUP>va</SUP> in F major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid thirds, 2&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid thirds, 2&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	<BR />
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid sixths, 2&times;8<SUP>va</SUP> in F major</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid sixths, 2&times;8<SUP>va</SUP> in D minor harmonic</SPAN></LI>
+	<LI STYLE="color: #D3833D"><SPAN CLASS="NoLink">&iquest; Diatonic scale, in solid sixths, 2&times;8<SUP>va</SUP> in D minor melodic</SPAN></LI>
+	</OL>
+</div>
+
+<div id="Sapphire" class="tabcontent">
+	<h3>Sapphire Level</h3>
+	<SPAN CLASS="Pedagogy">
+		<HR>
+		<P>
+		This level will introduce the guitar student to the following:<BR />
+		<UL>
+			<LI>Notes played in the fret range up to the ninteenth (&#8553;&#8552;) fret</LI>
+		</UL>
+		</P>
+		<HR>
+	</SPAN>
+	<OL>
+  	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/ChromaticScaleOnB96.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;on B<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=96.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/HirajoshiScaleCsharp.html">
+				<SPAN CLASS="Detail">Hirajoshi&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in C&sharp;&nbsp;<SPAN CLASS="Detail">major.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=108.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<SPAN CLASS="Detail"><BR /></SPAN>
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/RoyalRoadExtendedPowerGallop.html">
+				Royal Road Progression:  Heavy Metal Gallop Rhythm with 'Extended' Power Chords
+			</A>
+		</SPAN>
+	</LI>  
+	<BR />
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/ScaleDPhrygian.html">
+				<SPAN CLASS="Detail">Phrygian Dominant&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;on D<SPAN CLASS="Detail">Played with triplet eighth notes in 4/4 meter at MM=108.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<SPAN CLASS="Detail"><BR /></SPAN>
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/SonataZapateado.html">
+				Sonata<SPAN CLASS="Detail">, in D Major, by Mateo Albéniz</SPAN>
+			</A>
+		</SPAN>
+	</LI>  
+	<BR />
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/BluesScaleD.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in D<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=108.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	</OL>
+</div>
+
+<DIV id="Ruby" class="tabcontent">
+  <h3>Ruby Level</h3>
+  <OL>
+  	<LI STYLE="color: #bb0a1e">
+		<SPAN STYLE="color: black">
+			<A HREF="./Ruby/ChromaticScaleOnB100.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;on B<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=100.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #bb0a1e">
+		<SPAN STYLE="color: black">
+			<A HREF="./Ruby/K380.html">
+				Sonata<SPAN CLASS="Detail">, in E Major (K380), by Domenico Scarlatti</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #bb0a1e">
+		<SPAN STYLE="color: black">
+			<A HREF="./Ruby/BluesScaleEb.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in E&flat;&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=112.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+  </OL>
+</DIV>
+
+<div id="Diamond" class="tabcontent">
+  <h3>Diamond Level</h3>
+  <OL>
+  	<LI STYLE="color: #C0C0C0">
+		<SPAN STYLE="color: white">
+			<A HREF="./Diamond/ChromaticScaleOnB104.html">
+				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;on B<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=104.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
+	<LI STYLE="color: #C0C0C0">
+		<SPAN STYLE="color: white">
+			<A HREF="./Diamond/ABluesScale.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;in A<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor.&nbsp;MM=116.&nbsp;4/4 meter.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+  <BR /> 
+    <LI STYLE="color: #C0C0C0">
+		<SPAN STYLE="color: white">
+			<A HREF="./Diamond/SonataEroica.html">		
+				Sonata Eroica<SPAN CLASS="Detail">, Op.150 by Mauro Giuliani</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+  </OL>
+</div>
+
+<div id="Pragmatic" class="tabcontent">
+  <h3>Pragmatic Topics</h3>
+	<OL TYPE="1" STYLE="color: #321414;">
+	<LI><a href="./Pragmatic/Mnemonic.html">Mnemonic for Guitar String Names</a></LI>
+	<BR />
+	<LI><a href="./Pragmatic/TuneWithElectricTuner.html">How to tune a guitar with an electronic tuner</a></LI>
+	<BR />
+	<LI><a href="./Pragmatic/Posture.html">Posture</a></LI>
+	</OL>
+</div>
+
+<div id="Theory" class="tabcontent">
+  <h3>Theory</h3>
+	<OL TYPE="1" STYLE="color: #321414;">
+	<LI><a href="./Theory/PitchNotation.html">Pitch Notation</a></LI>
+	<LI><a href="./Theory/StaffXTab3.html">Cross Reference Chart for Pitch Notation:  Natural Notes</a></LI>
+	<LI><a href="./Theory/Tempo.html">Tempo</a></LI>
+	<BR />
+	<LI><a href="./Theory/TimeLine.html">Time Line</a></LI>
+	<BR />
+	<LI><a href="./Theory/Templates.html">Blank Music Sheets</a></LI>
+	</OL>
+</div>
+
+<div id="Index" class="tabcontent">
+	<H3>Index</H3>
+		<OL TYPE="1" STYLE="color: #321414;">
+			<LI><a href="./songlist.html">Songs</a></LI>
+			<LI><a href="./chordlist.html"><SPAN CLASS="Detail">Lessons Introducing</SPAN> Chords</a></LI>
+			<LI><a href="./scalelist.html">Scales</a></LI>
+		</OL>
+	<HR>
+	<H4>External Links</H4>
+		Partial lists of cover songs, performed by solo guitar, using the progression:
+		<P>
+		<DIV STYLE="color: #321414;">
+		<TABLE>
+		<TR><TD><A HREF="./Lists/111144115411.html">Twelve Bar Blues&emsp;</A></TD><TD><A HREF="./Lists/111144115411.html">I–I-I-I-IV–IV–I-I-V-VI-I-I</A></TD></TR>
+		<TR><TD><A HREF="./Lists/15634145.html">Pachelbel</A></TD><TD><A HREF="./Lists/15634145.html">I-V-vi-iii-IV-I-IV-V</A></TD></TR>
+		<TR><TD><A HREF="./Lists/1564.html">Optimistic</A></TD><TD><A HREF="./Lists/1564.html">I–V–vi–IV</A></TD></TR>
+		<TR><TD><A HREF="./Lists/15641534.html">South Detroit</A></TD><TD><A HREF="./Lists/15641534.html">I-V-vi-IV-I-V-iii-IV</A></TD></TR>
+		<TR><TD><A HREF="./Lists/1645.html">Doo-wop</A></TD><TD><A HREF="./Lists/1645.html">I–vi–IV-V</A></TD></TR>
+		<TR><TD><A HREF="./Lists/4561or6713.html">Major Hopscotch</A></TD><TD><A HREF="./Lists/4561or6713.html">IV–V–vi–I</TD></TR>
+		<TR><TD><A HREF="./Lists/4536.html">Royal Road</A></TD><TD><A HREF="./Lists/4536.html">IV△7–V7–iii7–vi</A></TD></TR>
+		<TR><TD><A HREF="./Lists/4b71.html">Backdoor</A></TD><TD><A HREF="./Lists/4b71.html">iv7-♭VII7-I</A></TD></TR>
+		<TR><TD><A HREF="./Lists/4561or6713.html">Minor Hopscotch</A></TD><TD><A HREF="./Lists/4561or6713.html">VI–VII–i–III</A></TD></TR>
+		<TR><TD><A HREF="./Lists/6415.html">Pessimistic</A></TD><TD><A HREF="./Lists/6415.html">vi–IV–I–V</A></TD></TR>
+		<TR><TD><A HREF="./Lists/Others.html">Unnamed others</A></TD><TD></TD></TR>
+		</TABLE>
+		</DIV>
+		</P>
+</div>
+
+<script>
+function openLevel(evt, Level) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Level).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script language="javascript" type="text/javascript" src="./footer.txt"></script>
+<!--
+<DIV STYLE="position: fixed; z-index: 4; bottom: 0; right: 0">
+GEMS-TAB.github.io
+<DIV>	
+-->
+
+<DIV STYLE="position: fixed; z-index: 4; top: 1vh; right: 0">
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear" STYLE="color: #b04646;">&#x2699;</BUTTON>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showDetail()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Details
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showPedagogy()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Pedagogy
+	</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+	function showDetail() {
+		var x = document.getElementsByClassName("Detail");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "inline-block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "inline-block";
+			}
+		}
+	}
+	
+		function showPedagogy() {
+		var x = document.getElementsByClassName("Pedagogy");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+
+</BODY>
+</HTML>
