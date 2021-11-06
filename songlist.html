@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>&#128142; Scale List</TITLE>
+	<TITLE>&#128142; Song List</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
-	<META name="keywords" content="guitar, list, scales, tab, tablature">
-	<META name="description" content="List of scales found on GEMS in TAB.">
+	<META name="keywords" content="list, songs, tab, tablature, uke, ukulele">
+	<META name="description" content="List of songs found on UKE-TAB.">
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
 	<STYLE>
+	
+	 HR {
+	display: none;
+	}
+	
 	table {border-collapse: collapse; border-spacing: 0;}
 	tr:nth-child(even) {background-color: #f2f2f2;}
 	th, td {text-align: left; padding: 1vh 1vw 1vh 1vw;}
@@ -37,11 +42,17 @@
   table th {
     text-transform: uppercase;
     letter-spacing: 1px;
+	font-family: 'Fredericka the Great';
+	font-weight: normal;
   }
   
   
   @media screen and (max-width: 600px) {
 
+   HR {
+   display: block;
+   }
+   
    #card table {
       border: 0;
     }
@@ -93,7 +104,7 @@
 		&emsp;
 		&#x2007;
 		&emsp;
-		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a name" CLASS="Gear">
+		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a song, composer, genre or level" CLASS="Gear">
 	</SPAN>
 </DIV>
 
@@ -117,7 +128,7 @@ function myFunction() {
 <DIV CLASS="Shim">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
-<H1>Scales</H1>
+<H1 CLASS="HeaderUke">Songs</H1>
 <HR>
 </DIV>
 <DIV ID="card">
@@ -125,620 +136,30 @@ function myFunction() {
 <thead>
 	<tr class="header">
 		<th>Link</th>
-		<th>Notes per octave</th>
-		<th>Type of Scale</th>
-		<th>Key</th>
-		<th>Range</th>
-		<th>Tempo</th>
-		<th>Note Value</th>
-		<th>Play Style</th>
+		<th>Composer</th>
+		<th>Song Title</th>
+		<th>Genre</th>
+		<th></th>
 		<th>Level</th>
 	</tr>
 </thead>
 <tbody>
- <!-- Pentatonic Minor-->
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Minor</td>
-		<td data-label="Key">E</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
+ <!--P-->
+	<tr>
+		<td></td>
+		<td data-label="Composer"><SPAN STYLE="font-size:x-large;font-family: 'Fredericka the Great';">P</SPAN></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td data-label="Link"><A HREF="./Pearl/JingleBellsChorus.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
+		<td data-label="Composer">James Lord Pierpont</SPAN></td>
+		<td data-label="Song Title""><A HREF="./Pearl/JingleBellsChorus.html"><SPAN STYLE="font-size:x-large;">Jingle Bells</SPAN></A></td>
+		<td data-label="Genre">Secular holiday song</td>
+		<td data-label="" style="font-size:smaller; text-align: left"><HR>Traditional American. Originally the song was entitled "One Horse Open Sleigh."</td>
 		<td data-label="Level" style="font-size:smaller;">Pearl <SPAN STYLE="font-size:x-small;">[01]</SPAN></td>
-	</tr>
- <!-- Pentatonic Major-->
-	<tr>
-		<td data-label="Link"><A HREF="./Pearl/PentatonicScaleDMajor.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Major</td>
-		<td data-label="Key">D</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Pearl <SPAN STYLE="font-size:x-small;">[01]</SPAN></td>
-	</tr>
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td data-label="Link"><A HREF="./Opal/PentatonicScaleDMajorTremolando.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Major</td>
-		<td data-label="Key">D</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;&#9835;</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Pearl/PentatonicScaleGMajor.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Major</td>
-		<td data-label="Key">G</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Pearl <SPAN STYLE="font-size:x-small;">[01]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Peridot/SlurScalePentatonicGMajor.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Major</td>
-		<td data-label="Key">G</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">56 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">single slurs</td>
-		<td data-label="Level" style="font-size:smaller;">Peridot <SPAN STYLE="font-size:x-small;">[04]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Sapphire/HirajoshiScaleCsharp.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale"><SPAN LANG="ja" STYLE="font-style: italic;">Hirajōshi</SPAN></td>
-		<td data-label="Key">C&sharp;</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">108 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Yo</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">120 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Turquoise <SPAN STYLE="font-size:x-small;">[03]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Iwato</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Peridot <SPAN STYLE="font-size:x-small;">[04]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">Insen</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Garnet <SPAN STYLE="font-size:x-small;">[05]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Pentatonic <SPAN STYLE="font-size:x-small;">(5 tones)</SPAN></td>
-		<td data-label="Type of Scale">In</td>
-		<td data-label="Key"></td>
-		<td data-label="Range"></td>
-		<td data-label="Tempo"></td>
-		<td data-label="Note value"></td>
-		<td data-label="Play style"></td>
-		<td data-label="Level" style="font-size:smaller;"></SPAN></td>
-	</tr>
-
-<!-- Hexatonic Blues Minor -->
-	<tr>
-		<td data-label="Link"><A HREF="./Peridot/BluesScaleAFlat.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">A&flat;</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Peridot <SPAN STYLE="font-size:x-small;">[04]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Garnet/BluesScaleA.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">A</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Garnet <SPAN STYLE="font-size:x-small;">[05]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Amethyst/BluesScaleBflat.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">B&flat;</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Amethyst <SPAN STYLE="font-size:x-small;">[06]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Aquamarine/BluesScaleB.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">B</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">76 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Aquamarine <SPAN STYLE="font-size:x-small;">[07]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Emerald/BluesScaleC.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">C</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">84 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Emerald <SPAN STYLE="font-size:x-small;">[08]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Topaz/BluesScaleDb.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">D&flat;</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">96 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Topaz <SPAN STYLE="font-size:x-small;">[09]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Sapphire/BluesScaleD.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">D</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">108 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Ruby/BluesScaleEb.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">E&flat;</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">112 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Ruby <SPAN STYLE="font-size:x-small;">[11]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Diamond/ABluesScale.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Hexatonic <SPAN STYLE="font-size:x-small;">(6 tones)</SPAN></td>
-		<td data-label="Type of Scale">Blues minor</td>
-		<td data-label="Key">A</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">116 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Diamond <SPAN STYLE="font-size:x-small;">[12]</SPAN></td>
-	</tr>
-<!-- Diatonic -->
-  <tr>
-    <td><A HREF="./Pearl/ScaleCMajor.html">&#10228;</A></td>
-	<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-	<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-    <td data-label="Key">C</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-	<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-	<td data-label="Play style">stepwise notes</td>
-	<td data-label="Level" style="font-size:smaller;">Pearl <SPAN STYLE="font-size:x-small;">[01]</SPAN></td>
-  </tr>
-
-  <tr>
-	<td><A HREF="./Opal/ScaleCMajorMM100.html">&#10228;</A></td></td>
-	<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-	<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-    <td data-label="Key">C</td>
-	<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-	<td data-label="Tempo">56 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-	<td data-label="Note value">eighth &#9835;&#9835;</td>
-	<td data-label="Play style">tremolando</td>
-	<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-  </tr>
-  
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-	<td></td>
-	<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-	<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-    <td data-label="Key">C</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-	<td>120</td>
-		<td data-label="Note value">quarter &#9833;</td>
-	<td data-label="Play style">stepwise notes</td>
-	<td data-label="Level" style="font-size:smaller;">Turquoise <SPAN STYLE="font-size:x-small;">[03]</SPAN></td>
-  </tr>
-  
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-    <td></td>
-	<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-	<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-    <td data-label="Key">C</td>
-	<td>2</td>
-	<td>69</td>
-	<td>Duple or Triplet</td>
-	<td data-label="Play style">stepwise notes</td>
-	<td data-label="Level" style="font-size:smaller;">Garnet <SPAN STYLE="font-size:x-small;">[05]</SPAN></td>
-  </tr>
-	
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-    <td></td>
-	<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-	<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-    <td data-label="Key">C</td>
-	<td>2</td>
-	<td>108</td>
-	<td>Triplet or Quadruple</td>
-	<td data-label="Play style">stepwise notes</td>
-	<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-  </tr>
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">100 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-	</tr>
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-	</tr>
-  <tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">76 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Aquamarine <SPAN STYLE="font-size:x-small;">[07]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Aquamarine <SPAN STYLE="font-size:x-small;">[07]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">84 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Emerald <SPAN STYLE="font-size:x-small;">[08]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">96 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Topaz <SPAN STYLE="font-size:x-small;">[09]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">solid thirds</td>
-		<td data-label="Level" style="font-size:smaller;">Topaz <SPAN STYLE="font-size:x-small;">[09]</SPAN></td>
-	</tr>	
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">solid sixths</td>
-		<td data-label="Level" style="font-size:smaller;">Topaz <SPAN STYLE="font-size:x-small;">[09]</SPAN></td>
-	</tr>		
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">108 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">116 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">116 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Ruby <SPAN STYLE="font-size:x-small;">[11]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">120 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Ruby <SPAN STYLE="font-size:x-small;">[11]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">138<SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">compound triplet slurs</td>
-		<td data-label="Level" style="font-size:smaller;">Ruby <SPAN STYLE="font-size:x-small;">[11]</SPAN></td>
-	</tr>	
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">112 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Diamond <SPAN STYLE="font-size:x-small;">[12]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">116 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">sixteenth</td>
-		<td data-label="Play style">tremolando</td>
-		<td data-label="Level" style="font-size:smaller;">Diamond <SPAN STYLE="font-size:x-small;">[12]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">F</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">144<SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">triplet eighth</td>
-		<td data-label="Play style">compound triplet slurs</td>
-		<td data-label="Level" style="font-size:smaller;">Diamond <SPAN STYLE="font-size:x-small;">[12]</SPAN></td>
-	</tr>
-	<tr>
-		<td><A HREF="./Pearl/ScaleGMajor.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">G</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Pearl <SPAN STYLE="font-size:x-small;">[01]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td><A HREF="./Turquoise/ScaleGMajorMM120.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">G</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">100 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-  </tr>
-	<tr>
-		<td><A HREF="./Opal/ScaleGMajor28veMM100.html">&#10228;</A></td>
-		<td data-label="Notes per octave">Heptatonic <SPAN STYLE="font-size:x-small;">(7 tones)</SPAN></td>
-		<td data-label="Type of Scale">Diatonic Major (Ionian mode)</td>
-		<td data-label="Key">G</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">120 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Turquoise <SPAN STYLE="font-size:x-small;">[03]</SPAN></td>
-  </tr>  
-<!-- Dodecaphonic -->
-	<tr>
-		<td data-label="Link"><A HREF="./Opal/ChromaticScaleOnD.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">D</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">100 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Opal <SPAN STYLE="font-size:x-small;">[02]</SPAN></td>
-	</tr>
-	<tr>
-		<td data-label="Link"><A HREF="./Turquoise/ChromaticScaleOnA.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">A</td>
-		<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">120 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">quarter &#9833;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Turquoise <SPAN STYLE="font-size:x-small;">[03]</SPAN></td>
-	</tr>  
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">A</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">eighth &#9835;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Peridot <SPAN STYLE="font-size:x-small;">[04]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">B</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Triplet Eighth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Garnet <SPAN STYLE="font-size:x-small;">[05]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">C</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">69 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth &#9836;&#9836;</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Amethyst <SPAN STYLE="font-size:x-small;">[06]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">D</td>
-		<td data-label="Range">2<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">76 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Aquamarine <SPAN STYLE="font-size:x-small;">[07]</SPAN></td>
-	</tr>
-	<tr style="font-size:smaller; color:rgba(50,20,20,0.33);">
-		<td></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">A</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">84 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Emerald <SPAN STYLE="font-size:x-small;">[08]</SPAN></td>
-	</tr>
-	<tr>
-		<td><A HREF="./Topaz/ScaleChromaticOnAsharp.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">A&sharp;</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">88 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Topaz <SPAN STYLE="font-size:x-small;">[09]</SPAN></td>
-	</tr>
-	<tr>
-		<td><A HREF="./Sapphire/ChromaticScaleOnB96.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">B</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">96 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Sapphire <SPAN STYLE="font-size:x-small;">[10]</SPAN></td>
-	</tr>
-	<tr>
-		<td><A HREF="./Ruby/ChromaticScaleOnB100.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">B</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">100 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Ruby <SPAN STYLE="font-size:x-small;">[11]</SPAN></td>
-	</tr>
-	<tr>
-		<td><A HREF="./Diamond/ChromaticScaleOnB104.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></td>
-		<td data-label="Notes per octave">Dodecaphonic <SPAN STYLE="font-size:x-small;">(12 voices)</SPAN></td>
-		<td data-label="Type of Scale">Chromatic</td>
-		<td data-label="Key">B</td>
-		<td data-label="Range">3<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
-		<td data-label="Tempo">104 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
-		<td data-label="Note value">Sixteenth</td>
-		<td data-label="Play style">stepwise notes</td>
-		<td data-label="Level" style="font-size:smaller;">Diamond <SPAN STYLE="font-size:x-small;">[12]</SPAN></td>
 	</tr>
 </tbody>  
 </table>
