@@ -1,1 +1,1 @@
-document.write('<DIV STYLE="position: fixed; z-index: 4; bottom: 0; right: 0">UKE-TAB.github.io<DIV>')
+document.write('<DIV STYLE="position: fixed; z-index: 4; bottom: 0; right: 0">gems-tab.github.io/UKE-TAB/<DIV>')
