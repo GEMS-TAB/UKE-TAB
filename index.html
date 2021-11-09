@@ -241,60 +241,6 @@
 	background-color: #bb0a1e;
 	border-bottom: 3px solid #bb0a1e;
 }
-#Diamond{
-	background-color: rgba(255, 255, 255, .15);  
- 	backdrop-filter: blur(5px);
-	border-color: rgba(255, 255, 255, .15);
-	border-style: solid;
-	border-width: 0 0 0 7vh;
-}
-#Diamondbutton{
-	background-color: #321414;  
- 	backdrop-filter: blur(5px);
-	border-bottom: 3px solid white;
-}
-#Diamondbutton.active{
-	background-color: rgba(255, 255, 255, .15);  
- 	backdrop-filter: blur(5px);
-	border-bottom: 3px solid rgba(255, 255, 255, .15);
-}
-
-#Pragmatic{
-	background-color: #f3ebe1;
-	border-color: #b08d57;
-	border-style: solid;
-	border-width: 0 0 0 7vh;
-}
-
-#Theory{
-	background-color: #fefcf9;
-	border-color: #D4AF37;
-	border-style: solid;
-	border-width: 0 0 0 7vh;
-}
-#Theorybutton{
-	background-color: #321414;
-	border-bottom: 3px solid #D4AF37;
-}
-#Theorybutton.active{
-	background-color: #D4AF37;
-	border-bottom: 3px solid #D4AF37;
-}	
-#Index{
-	background-color: #f3ebe1;
-	border-color: #b08d57;
-	border-style: solid;
-	border-width: 0 0 0 7vh;
-}
-#Indexbutton{
-	background-color: #321414;
-	border-bottom: 3px solid #b08d57;
-	<!-- #b04646; -->
-}
-#Indexbutton.active{
-	background-color: #b08d57;
-	border-bottom: 3px solid #b08d57;
-}	
 
 </style>
 
@@ -302,13 +248,12 @@
 <BODY STYLE="background-color: #321414; font-family: Fredericka the Great">
 	<H1>UKE-TAB</H1>
 	Ukulele Tablature
-	<H2>Songs</H2>
-	<H2>Chords</H2>
-	<H2>Scales</H2>
+	<H2><a href="./songlist.html">Songs</a></H2>
+	<H2><a href="./chordlist.html">Chords</a></H2>
+	<H2><a href="./scalelist.html">Scales</a></H2>
 	<H2>Syllabus</H2>
 <div class="tab">
 	<!-- <button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button> -->
-	<button class="tablinks" onclick="openLevel(event, 'Index')" id="Indexbutton">&#x1f50d;Index</button>
 	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
 	<button class="tablinks" onclick="openLevel(event, 'Opal')" id="Opalbutton">&#8199;2 Opal</button>
 	<button class="tablinks" onclick="openLevel(event, 'Turquoise')"  id="Turquoisebutton">&#8199;3 Turquoise</button>
@@ -320,9 +265,7 @@
 	<button class="tablinks" onclick="openLevel(event, 'Topaz')" id="Topazbutton">&#8199;9 Topaz</button>
 	<button class="tablinks" onclick="openLevel(event, 'Sapphire')" id="Sapphirebutton">10 Sapphire</button>
 	<button class="tablinks" onclick="openLevel(event, 'Ruby')" id="Rubybutton">11 Ruby</button>
-	<button class="tablinks" onclick="openLevel(event, 'Diamond')"  id="Diamondbutton">12 Diamond</button>
-	<button class="tablinks" onclick="openLevel(event, 'Pragmatic')" id="Indexbutton">&#8199;&#8199; Pragmatic</button>
-	<button class="tablinks" onclick="openLevel(event, 'Theory')" id="Theorybutton">&#8199;&#8199; Theory</button>
+
 </div>	
 
 <DIV ID="Pearl" CLASS="tabcontent">
@@ -1379,88 +1322,6 @@
   </OL>
 </DIV>
 
-<div id="Diamond" class="tabcontent">
-  <h3>Diamond Level</h3>
-  <OL>
-  	<LI STYLE="color: #C0C0C0">
-		<SPAN STYLE="color: white">
-			<A HREF="./Diamond/ChromaticScaleOnB104.html">
-				<SPAN CLASS="Detail">Chromatic&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;on B<SPAN CLASS="Detail">.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=104.</SPAN>
-			</A>
-		</SPAN>
-	</LI>
-	<BR />
-	<LI STYLE="color: #C0C0C0">
-		<SPAN STYLE="color: white">
-			<A HREF="./Diamond/ABluesScale.html">
-				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;3&times;8<SUP>va</SUP></SPAN>&nbsp;in A<SPAN CLASS="Detail">&nbsp;</SPAN>m<SPAN CLASS="Detail">inor.&nbsp;MM=116.&nbsp;4/4 meter.</SPAN>
-			</A>
-		</SPAN>
-	</LI>
-  <BR /> 
-    <LI STYLE="color: #C0C0C0">
-		<SPAN STYLE="color: white">
-			<A HREF="./Diamond/SonataEroica.html">		
-				Sonata Eroica<SPAN CLASS="Detail">, Op.150 by Mauro Giuliani</SPAN>
-			</A>
-		</SPAN>
-	</LI>
-  </OL>
-</div>
-
-<div id="Pragmatic" class="tabcontent">
-  <h3>Pragmatic Topics</h3>
-	<OL TYPE="1" STYLE="color: #321414;">
-	<LI><a href="./Pragmatic/Mnemonic.html">Mnemonic for Guitar String Names</a></LI>
-	<BR />
-	<LI><a href="./Pragmatic/TuneWithElectricTuner.html">How to tune a guitar with an electronic tuner</a></LI>
-	<BR />
-	<LI><a href="./Pragmatic/Posture.html">Posture</a></LI>
-	</OL>
-</div>
-
-<div id="Theory" class="tabcontent">
-  <h3>Theory</h3>
-	<OL TYPE="1" STYLE="color: #321414;">
-	<LI><a href="./Theory/PitchNotation.html">Pitch Notation</a></LI>
-	<LI><a href="./Theory/StaffXTab3.html">Cross Reference Chart for Pitch Notation:  Natural Notes</a></LI>
-	<LI><a href="./Theory/Tempo.html">Tempo</a></LI>
-	<BR />
-	<LI><a href="./Theory/TimeLine.html">Time Line</a></LI>
-	<BR />
-	<LI><a href="./Theory/Templates.html">Blank Music Sheets</a></LI>
-	</OL>
-</div>
-
-<div id="Index" class="tabcontent">
-	<H3>Index</H3>
-		<OL TYPE="1" STYLE="color: #321414;">
-			<LI><a href="./songlist.html">Songs</a></LI>
-			<LI><a href="./chordlist.html"><SPAN CLASS="Detail">Lessons Introducing</SPAN> Chords</a></LI>
-			<LI><a href="./scalelist.html">Scales</a></LI>
-		</OL>
-	<HR>
-	<H4>External Links</H4>
-		Partial lists of cover songs, performed by solo guitar, using the progression:
-		<P>
-		<DIV STYLE="color: #321414;">
-		<TABLE>
-		<TR><TD><A HREF="./Lists/111144115411.html">Twelve Bar Blues&emsp;</A></TD><TD><A HREF="./Lists/111144115411.html">I–I-I-I-IV–IV–I-I-V-VI-I-I</A></TD></TR>
-		<TR><TD><A HREF="./Lists/15634145.html">Pachelbel</A></TD><TD><A HREF="./Lists/15634145.html">I-V-vi-iii-IV-I-IV-V</A></TD></TR>
-		<TR><TD><A HREF="./Lists/1564.html">Optimistic</A></TD><TD><A HREF="./Lists/1564.html">I–V–vi–IV</A></TD></TR>
-		<TR><TD><A HREF="./Lists/15641534.html">South Detroit</A></TD><TD><A HREF="./Lists/15641534.html">I-V-vi-IV-I-V-iii-IV</A></TD></TR>
-		<TR><TD><A HREF="./Lists/1645.html">Doo-wop</A></TD><TD><A HREF="./Lists/1645.html">I–vi–IV-V</A></TD></TR>
-		<TR><TD><A HREF="./Lists/4561or6713.html">Major Hopscotch</A></TD><TD><A HREF="./Lists/4561or6713.html">IV–V–vi–I</TD></TR>
-		<TR><TD><A HREF="./Lists/4536.html">Royal Road</A></TD><TD><A HREF="./Lists/4536.html">IV△7–V7–iii7–vi</A></TD></TR>
-		<TR><TD><A HREF="./Lists/4b71.html">Backdoor</A></TD><TD><A HREF="./Lists/4b71.html">iv7-♭VII7-I</A></TD></TR>
-		<TR><TD><A HREF="./Lists/4561or6713.html">Minor Hopscotch</A></TD><TD><A HREF="./Lists/4561or6713.html">VI–VII–i–III</A></TD></TR>
-		<TR><TD><A HREF="./Lists/6415.html">Pessimistic</A></TD><TD><A HREF="./Lists/6415.html">vi–IV–I–V</A></TD></TR>
-		<TR><TD><A HREF="./Lists/Others.html">Unnamed others</A></TD><TD></TD></TR>
-		</TABLE>
-		</DIV>
-		</P>
-</div>
-
 <script>
 function openLevel(evt, Level) {
   var i, tabcontent, tablinks;
@@ -1481,15 +1342,11 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <script language="javascript" type="text/javascript" src="./footer.txt"></script>
-<!--
-<DIV STYLE="position: fixed; z-index: 4; bottom: 0; right: 0">
-GEMS-TAB.github.io
-<DIV>	
--->
 
 <DIV STYLE="position: fixed; z-index: 4; top: 1vh; right: 0">
 <BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear" STYLE="color: #b04646;">&#x2699;</BUTTON>
 </DIV>
+
 <!-- The Modal -->
 <div id="SettingsModal" class="w3-modal">
   <div class="modal-content">

@@ -503,6 +503,8 @@ input:checked + .slider:before {
 	.count{visibility: hidden; color: #77dd77;}
 	.count0{visibility: hidden; color: #77dd77;}
 	.count1{visibility: visible; color: #77dd77;}
+	.duo{display: none;}
+	.DuoInline{display: none;}
 	.key0{display: none;}
 	.key1{display: block;}
 	.LHabove{visibility: hidden; color: #c23b22; font-style: italic;}
@@ -518,8 +520,8 @@ input:checked + .slider:before {
 	.stems{visibility: hidden; color: black;}
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
-	.duo{display: none;}
-	.DuoInline{display: none;}
+	.tab{color: #696969;}
+
  
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
 	.Pedagogy{display: none; font-size: smaller; color: inherit; font-family: cursive; color: navy;}
@@ -642,10 +644,13 @@ input:checked + .slider:before {
 	.NavButtonLeft{display:none;}
 	.NavButtonMid{display:none;}
 	.NavButtonRight{display:none;}
+	.lyrics0{color: black;}
+	.lyrics1{color: black;}
 	.OpalNavBar{display:none;}
 	.Pearl{display:none;}
 	.PeridotNavBar{display:none;}
 	.Shim{display:none;}
+	.tab{color: black;}
 	.TurquoiseNavBar{display: none !important;}
 
 }
