@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Song List</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="list, songs, tab, tablature, uke, ukulele">
+	<META name="description" content="List of songs found on UKE-TAB.">
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+	<STYLE>
+		#myUL {
+			padding: 0;
+			margin: 0;
+			}
+
+	</STYLE>
+</HEAD>
+<BODY CLASS="Index" STYLE="font-family: serif;">
+
+<DIV CLASS="IndexNavBar">
+<SPAN STYLE="float: left;">
+	<SPAN CLASS = "NavButtonLeft"><A HREF="./index.html">&#x2630;</A></SPAN>
+		&emsp;
+		&#x2007;
+		&emsp;
+		&#x2007;
+		&emsp;
+		&#x2007;
+		&emsp;
+		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a song, composer, genre or level" CLASS="Gear">
+	</SPAN>
+</DIV>
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1 CLASS="HeaderUke">Syllabus</H1>
+<HR>
+</DIV>
+<OL ID="myOL">
+	<H2 ID="PearlH2">Pearl</H2>
+	<LI><A HREF="./Pearl/JingleBellsChorus.html">Jingle Bells</A></UL>
+	<H2 ID="OpalH2">Opal</H2>
+	<li><a href="#">Agnes</a></li>
+	<li><a href="#">Billy</a></li>
+	<li><a href="#">Bob</a></li>
+	<li><a href="#">Calvin</a></li>
+	<li><a href="#">Christina</a></li>
+	<li><a href="#">Cindy</a></li>
+</Ol>
+<!-- Scripts -->
+<script>
+function myFunction() {
+    var input, filter, ol, li, a, i, txtValue, pearl, opal;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ol = document.getElementById("myOL");
+    li = ol.getElementsByTagName("li");
+	pearl = document.getElementById("PearlH2");
+	opal = document.getElementById("OpalH2");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+		else {
+            li[i].style.display = "none";
+			pearl.style.display = "none";
+			opal.style.display = "none";
+        }
+    }
+}
+</script>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
