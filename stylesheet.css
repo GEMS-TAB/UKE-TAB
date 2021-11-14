@@ -32,10 +32,21 @@ div img { max-width: 33%; padding: 6%; }
 
 	.HeaderUke {
 		font-family: 'Fredericka the Great';
+		color: #696969;
 		display: inline-block;
 		font-size: 2.5em;
 		margin-top: 0.33em;
 		margin-bottom: 0.33em;
+		font-weight: normal;
+	}
+
+	.H2Uke {
+		font-family: 'Fredericka the Great';
+		color: #696969;
+		display: block;
+		font-size: 2.0em;
+		margin-top: 0.83em;
+		margin-bottom: 0.83em;
 		font-weight: normal;
 	}
 	
