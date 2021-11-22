@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>&#128142; C6 Major Chord [TAB]</TITLE>
+	<TITLE>&#9753; C6 Major Chord [UKE-TAB]</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<META name="keywords" content="F, chord, guitar, major, tab, tablature">
-	<META name="description" content="F major chord, as played on guitar.">
+	<META name="keywords" content="C6, added sixth, chord, major, sixth, tab, tablature, uke, ukulele">
+	<META name="description" content="C major added sixth (C6) chord, as played on ukulele.">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
 </HEAD>
 <BODY CLASS="PearlBody">
 <DIV CLASS="PearlNavBar">
 <SPAN STYLE="float: left;">
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0">First</SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./ChordIntroAbMajor.html">Prev</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./ChordGm.html">Next</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./ChordIntroHendrix.html">Last</A></SPAN>
+	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">&#x2630;</A></SPAN>
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+			<div id="myDropdown" class="dropdown-content">
+				<A HREF="../index.html">Home</a>
+				<a href="../chordlist.html#0000">Chords</a>
+				<a href="../syllabus.html#0000">Syllabus</a>
+				<HR>
+				<SPAN STYLE="opacity:0">Prev</SPAN>
+				<a href="#">Next</A>
+				<HR>
+				<A HREF="#" onclick="window.print();return false;">Print</A>
+				<HR>
+				<A HREF="https://youtu.be/AlujmKgWIhY">YouTube</A>
+			</div>
+	</div>
 	<SPAN CLASS = "NavButtonLeft"><A HREF="../Turquoise/FMajorChords3Fingers.html">Easier</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="../Amethyst/FMajorBarreChord.html">Harder</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="https://youtu.be/nXMFqM9hNAs">YouTube</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
 <BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
@@ -82,6 +91,29 @@
 </div>
 
 <!-- Scripts -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 <script>
 	function showTempo() {
 		var x = document.getElementsByClassName("MM");
@@ -192,8 +224,7 @@
 <DIV CLASS="Shim">&#x2007;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
-	<H1 STYLE="float: left;">Introduction to the F Major Chord</H1>
-	<H5 STYLE="clear: left; float: left;">First Position with two string barre</H5>
+	<H1 CLASS = "HeaderUke" STYLE="float: left;">Introduction to the C Major Added Sixth Chord</H1>
 	<DIV STYLE="display: inline-block; float: right; text-align: right;">
 		H.G.<BR />
 	</DIV>
