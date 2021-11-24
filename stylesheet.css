@@ -72,18 +72,30 @@ strong{
 	th, td {text-align: left; padding: 2px 16px 2px 16px;}
 	
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  
+  	position: relative;
+	display: inline-block;
+	  /* margin-top: 1vh; */
+	margin-left: 3vw;
+  
+  background-color: inherit;
+  color: inherit;
+	padding: 0.25vh 0.5vw 0.25vh 0.5vw; /* top right bottom left; */
+  /* font-size: 16px; */
+  font-size: 2vmin;
+  font-size: clamp(16px, 2vw, 2.5vw);
+  	font-weight: bold;
   border: none;
   cursor: pointer;
+  border-radius: 0.15vw;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.dropbtn:hover, .dropbtn:focus {
+  /* .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;
 }
-
+ */
+ 
 .dropdown {
   position: relative;
   display: inline-block;
@@ -111,7 +123,31 @@ strong{
 .show {display: block;}
 
 
+.Gear{
+	background-color: inherit;
+	color: inherit;
+	float: right; 
+	margin-right: 4vw;
+	padding: 0.25vh 0.5vw 0.25vh 0.5vw; /* top right bottom left; */
+	font-size: clamp(18px, 2vw, 2.5vw);
+	font-weight: bold;
+	border: none;
+	border-radius: 2vw;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	
+.Gear:hover {
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+.Gear:active {
+	border: solid;
+}
+
+.Gear:focus{
+    outline: none;
+}
 
 
 
@@ -428,29 +464,7 @@ strong{
 
 
 	
-.Gear{
-	background-color: inherit;
-	float: right; 
-	margin-right: 4vw;
-	font-size: clamp(18px, 3vw, 3vw);
-	font-weight: bold;
-	border: none;
-	border-radius: 2vw;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	}
-	
-.Gear:hover {
-	background-color: white;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
 
-.Gear:active {
-	border: solid;
-}
-
-.Gear:focus{
-    outline: none;
-}
 	
 .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 	
@@ -692,19 +706,22 @@ input:checked + .slider:before {
 @media print {
 	
 	body{color: black;}
-	.HeaderUke {color: black;}
-	.PearlBody {color: black;}
-	div {page-break-inside: avoid; !important;}
-	.Gear{display:none;}
+	.Shim{display:none;}
+	.dropbtn{display:none;}
+	.dropdown{display:none;}
 	.NavButtonLeft{display:none;}
 	.NavButtonMid{display:none;}
 	.NavButtonRight{display:none;}
+	.Gear{display:none;}
+	.HeaderUke {color: black;}
+	.PearlBody {color: black;}
+	div {page-break-inside: avoid; !important;}
 	.lyrics0{color: black;}
 	.lyrics1{color: black;}
 	.OpalNavBar{display:none;}
 	.Pearl{display:none;}
 	.PeridotNavBar{display:none;}
-	.Shim{display:none;}
+
 	.tab{color: black;}
 	.TurquoiseNavBar{display: none !important;}
 
