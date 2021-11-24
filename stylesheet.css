@@ -706,7 +706,7 @@ input:checked + .slider:before {
 @media print {
 	
 	body{color: black;}
-	.Shim{display:none;}
+	div {page-break-inside: avoid; !important;}
 	.dropbtn{display:none;}
 	.dropdown{display:none;}
 	.NavButtonLeft{display:none;}
@@ -714,14 +714,13 @@ input:checked + .slider:before {
 	.NavButtonRight{display:none;}
 	.Gear{display:none;}
 	.HeaderUke {color: black;}
-	.PearlBody {color: black;}
-	div {page-break-inside: avoid; !important;}
 	.lyrics0{color: black;}
 	.lyrics1{color: black;}
 	.OpalNavBar{display:none;}
-	.Pearl{display:none;}
+	.PearlBody {color: black;}
+	.PearlNavBar{display:none; z-index:-1;}
 	.PeridotNavBar{display:none;}
-
+	.Shim{display:none;}
 	.tab{color: black;}
 	.TurquoiseNavBar{display: none !important;}
 
