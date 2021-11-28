@@ -21,7 +21,7 @@ body {
 /*	background-color: #F1F1D4; */
 	color: #696969;
 	font-family: 'Menlo-Regular','Courier','Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
-/*	font-family: 'Consolas', */	
+/*	font-family: 'Consolas', */
 	font-size: clamp(12px, 1.3vw, 1.3vw);
 /*	font-size: calc(12px + 1.3vw); */
 /*	font-size: 1.3vw; */
@@ -590,6 +590,7 @@ input:checked + .slider:before {
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
 	.tab{color: #696969;}
+	.tab60{color: #696969; font-size: clamp(12px, 2vw, 6.25vw);}
 
  
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
@@ -612,7 +613,7 @@ input:checked + .slider:before {
 		font-family: 'PT Mono','Cousine','Hack', monospace;
 		line-height:100%;
 		height: auto;
-		width: 66%;
+		width: 66vw;
 		position: relative;
 		padding: 1%;
 		margin: 0 auto;
@@ -705,7 +706,7 @@ input:checked + .slider:before {
 
 @media print {
 	
-	body{color: black;}
+	body{color: black; 	font-size: clamp(12px, 2vw, 6.25vw);}
 	div {page-break-inside: avoid; !important;}
 	.dropbtn{display:none;}
 	.dropdown{display:none;}
@@ -722,6 +723,7 @@ input:checked + .slider:before {
 	.PeridotNavBar{display:none;}
 	.Shim{display:none;}
 	.tab{color: black;}
+	.tab60{color: black; font-size: clamp(12px, 2.5vw, 2.5vw);}
 	.TurquoiseNavBar{display: none !important;}
 
 }
