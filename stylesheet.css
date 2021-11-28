@@ -590,7 +590,8 @@ input:checked + .slider:before {
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
 	.tab{color: #696969;}
-	.tab60{color: #696969; font-size: clamp(12px, 2vw, 6.25vw);}
+	.tab60{clear: left; color: #696969; font-size: clamp(12px, 2vw, 2vw);}
+	.tab80{clear: left; color: #696969; font-size: clamp(16px, 1.5vw, 1.5vw);}
 
  
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
@@ -724,6 +725,7 @@ input:checked + .slider:before {
 	.Shim{display:none;}
 	.tab{color: black;}
 	.tab60{color: black; font-size: clamp(12px, 2.5vw, 2.5vw);}
+	.tab80{color: black; font-size: clamp(11pt, 2.0vw, 2.0vw);}
 	.TurquoiseNavBar{display: none !important;}
 
 }
