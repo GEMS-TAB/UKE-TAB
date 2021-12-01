@@ -723,7 +723,7 @@ input:checked + .slider:before {
 	.PearlNavBar{display:none; z-index:-1;}
 	.PeridotNavBar{display:none;}
 	.Shim{display:none;}
-	.tab{color: black;}
+	.tab{color: black; page-break-inside: avoid; !important;}
 	.tab60{color: black; font-size: clamp(12px, 2.5vw, 2.5vw);}
 	.tab80{color: black; font-size: clamp(11pt, 2.0vw, 2.0vw);}
 	.TurquoiseNavBar{display: none !important;}
