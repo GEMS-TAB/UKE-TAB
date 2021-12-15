@@ -9,18 +9,26 @@
 </HEAD>
 <BODY CLASS="PearlBody">
 <DIV CLASS="PearlNavBar">
-<SPAN STYLE="float: left;">
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">&#x2630;</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0">First</SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0">Prev</SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0">Next</SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0">Last</SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0">Easier</SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">Harder</SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;">YouTube</SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
-</SPAN>
-<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+	<SPAN STYLE="float: left;">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+				<div id="myDropdown" class="dropdown-content">
+					<A HREF="../index.html">Home</a>
+					<A HREF="../songlist.html#JingleBellsChorus">Songs</a>
+					<A HREF="../syllabus.html#0000Am7">Syllabus</a>
+					<HR>
+					<A HREF="./ScaleCMajor.html">Prev</A>
+					<A HREF="./Chord0000(Am7).html">Next</A>
+					<HR>
+					<A HREF="#" onclick="window.print();return false;">Print</A>
+					<HR>
+					<A HREF="https://gems-tab.github.io/Pearl/JingleBellsChorus.html">Guitar</A>
+				</div>
+		</div>
+		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+		<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+	</SPAN>
+	<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
 
 
@@ -84,6 +92,27 @@
 </div>
 
 <!-- Scripts -->
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 <script>
 	function showTempo() {
 		var x = document.getElementsByClassName("MM");
@@ -191,7 +220,7 @@
 	}
 </script>
 	
-<DIV style="clear: both; font-size:9vh;">&emsp;</DIV>
+<DIV CLASS="Shim">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
 <H1 CLASS="HeaderUke">Jingle Bells Chorus</H1>
