@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#9753; Happy Birthday to You [UKE-TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META name="keywords" content="birthday, guitar, happy, Hill, song, score, tab, tablature, tabulature, uke, ukulele, you">
+	<META name="description" content="Happy Birthday to You.  Music score in ukulele tablature.">
+	<LINK rel="stylesheet" type="text/css" href="../../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="OpalBody">
+<DIV CLASS="OpalNavBar">
+<SPAN STYLE="float: left;">
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+			<div id="myDropdown" class="dropdown-content">
+				<A HREF="../index.html">Home</a>
+				<A HREF="../songlist.html#HappyBday">Songs</a>
+				<A HREF="../syllabus.html#HappyBday">Syllabus</a>
+				<HR>
+				<SPAN STYLE="opacity:0">Prev</SPAN>
+				<SPAN STYLE="opacity:0">Next</SPAN>
+				<HR>
+				<A HREF="#" onclick="window.print();return false;">Print</A>
+				<HR>
+				<A HREF="https://youtu.be/duLO5qUvpQc">YouTube</A>
+				<HR>
+				<A HREF="../../Opal/HappyBirthday.html">Guitar</A>
+			</div>
+	</div>
+	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+</SPAN>
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+		<span onclick="document.getElementById('SettingsModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+		<H3>Hide | Show</H3>
+		<UL style="list-style-type:none;">
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" checked onclick="showKey()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Key Signature
+			</LI>
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" onclick="showTempo()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Tempo
+			</LI>
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" checked onclick="showStems()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Rhythm
+			</LI>
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" onclick="showCount()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Count
+			</LI>
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" checked onclick="showLyrics()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Lyrics
+			</LI>
+		</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("MM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "hidden") {
+				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLyrics() {
+		var x = document.getElementsByClassName("lyrics1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+	
+<DIV CLASS="Shim">&#x2007;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+	<H1 CLASS = "HeaderUke" STYLE="float: left;">Happy Birthday to You</H1>
+	<H4 STYLE="font-family: 'Fredericka the Great'; font-weight: normal; display: inline-block; float: left; clear: left; color: inherit;">(Good Morning to All)</H4>
+	<DIV STYLE="display: inline-block; float: right; text-align: right;">
+		<P>
+		Melody by<BR />
+		Mildred J. Hill
+		</P>
+	</DIV>
+<HR  STYLE="clear: both;">
+</DIV>
+<DIV CLASS="MM">
+	<P>
+	<table>
+	<tr><td>MM:&#x2007;</td><td>106 BPM</td></tr>
+	</table>
+	</P>
+</DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:</td><td>C Major</td></tr>
+	</table>
+	</P>
+</DIV>
+
+<!-- First Phrase.  Measures 1-4 -->
+<DIV CLASS="tab70" STYLE="clear: left;">
+<!-- Measure 0 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--!--><SPAN>&#x2007;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&#x2007;</SPAN><BR />
+<!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->C&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 1 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--^--><SPAN>&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">1</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 2 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--^--><SPAN>&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">2</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 3 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--^--><SPAN>&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">3</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 4 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--^--><SPAN>&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">4</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x2524;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<!-- Second Phrase.  Measures 5-8 -->
+<DIV CLASS="tab70" STYLE="clear: left;">
+<!-- Measure 5 -->
+<SPAN CLASS="tab" CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">&nbsp;&nbsp;5</SPAN><BR />
+<!--^--><SPAN STYLE="opacity: 0;">&#x1d110;</SPAN><BR />
+<!--A-->A&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->C&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 6 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">6</SPAN><BR />
+<!--^--><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>&#x1d110;</STRONG></SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 7 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">7</SPAN><BR />
+<!--^--><SPAN STYLE="opacity: 0;">&#x1d110;</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 8 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">8</SPAN><BR />
+<!--^--><SPAN STYLE="opacity: 0;">&#x1d110;</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<DIV CLASS="lyrics1" STYLE="clear: left;">
+		<DIV STYLE="text-align: right;">
+			Lyrics by<BR />Patty S. Hill
+		</DIV>
+<P>
+Happy birthday to you<BR/>
+Happy birthday to you<BR/>
+Happy birthday dear [NAME]<BR/>
+Happy birthday to you.<BR/>
+</P>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
