@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#9753; Contredanse [UKE-TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META name="keywords" content="Carulli, Contredanse, country, dance, guitar, score, tab, tablature, tabulature, uke, ukulele">
+	<META name="description" content="Contredanse (Country Dance) by Ferdinando Carulli.  Music score in ukulele tablature.">
+	<LINK rel="stylesheet" type="text/css" href="../../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="GarnetBody">
+<DIV CLASS="GarnetNavBar">
+	<SPAN STYLE="float: left;">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+				<div id="myDropdown" class="dropdown-content">
+					<A HREF="../index.html">Home</a>
+					<A HREF="../songlist.html#Contredanse">Songs</a>
+					<A HREF="../syllabus.html#Contredanse">Syllabus</a>
+					<HR>
+					<A HREF="./BransleDePoitou.html">Prev</A>
+					<A HREF="../Amethyst/WeWishUMerryXmas.html">Next</A>
+					<HR>
+					<A HREF="#" onclick="window.print();return false;">Print</A>
+					<HR>
+					<A HREF="https://youtu.be/hTxXfj6nYqo">YouTube</A>
+					<HR>
+				<A HREF="../../Opal/Contredanse.html">Guitar</A>
+				</div>
+		</div>
+		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+		<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+	</SPAN>
+	<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showTempo()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Tempo
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showStems()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Rhythm
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showCount()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Count
+	</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("BPM")
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "hidden") {
+				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<SPAN LANG="fr" STYLE="font-style: italic;">
+<H1 CLASS = "HeaderUke" STYLE="float: left;">Contredanse</H1>
+<H3 STYLE="display: inline-block; float: left; clear: left; color: inherit;">(Country Dance)<BR/><SPAN STYLE="font-family: 'Special Elite';">Opus 120 No. 2</SPAN></H3>
+</SPAN>
+	<DIV STYLE="display: inline-block; float: right; text-align: right;">
+		Ferdinando Carulli<BR />
+	</DIV>
+<HR STYLE="clear: both;">
+</DIV>
+<DIV CLASS="BPM">
+	<P>
+	<table>
+	<tr><td>MM:&#x2007;</td><td>100 BPM</td></tr>
+	<tr><td></td><td><SPAN CLASS="dynamics" STYLE="color:inherit" LANG="it">Allegretto</SPAN></td></tr>
+	</table>
+	</P>
+</DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:</td><td>F Major</td></tr>
+	</table>
+	</P>
+</DIV>
+<!-- First Sentence.  Measures 1-8  -->
+<DIV CLASS="tab100" STYLE="clear: left;">
+<!-- Measure 1 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">&nbsp;&nbsp;&nbsp;1</SPAN><BR />
+<!--A-->A&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->E&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->C&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 2 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">2</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 3 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">3</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 4 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">4</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 5 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">5</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 6 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">6</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 7 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">&nbsp;&nbsp;7</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 8 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">8</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2</SPAN><BR /><BR />
+</SPAN>
+</DIV>
+<!-- Second Sentence.  Measures 9-16  -->
+<DIV CLASS="tab100" STYLE="clear: left;">
+<!-- Measure 9 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">&nbsp;&nbsp;&nbsp;9</SPAN><BR />
+<!--A-->A&#x2553;&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->E&#x255F;<STRONG>&#8226;</STRONG>&#x2500;<STRONG>6</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>6</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->C&#x255F;<STRONG>&#8226;</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->G&#x2559;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 10 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">10</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>8</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 11 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">11</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 12 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">12</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN><!-- Measure 13 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">13</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>6</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>6</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 14 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">14</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>8</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 15 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">15</SPAN><BR />
+<!--A-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 16 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">16</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--!--><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG><SPAN CLASS="dynamics" LANG="it">Fine</SPAN></STRONG></SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2</SPAN><BR /><BR />
+</SPAN>
+</DIV>
+<!-- Third Sentence.  Measures 17-24  -->
+<DIV CLASS="tab100" STYLE="clear: left;">
+<!-- Measure 17 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">&nbsp;&nbsp;&nbsp;17</SPAN><BR />
+<!--A-->A&#x2553;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>5</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->E&#x255F;<STRONG>&#8226;</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->C&#x255F;<STRONG>&#8226;</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x2559;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 18 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">18</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>5</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 19 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">19</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 20 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">20</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN><!-- Measure 21 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">21</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 22 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">22</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 23 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">23</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--!--><SPAN>&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&#x2007;&plus;&#x2007;2&#x2007;&plus;</SPAN><BR /><BR />
+</SPAN>
+<!-- Measure 24 -->
+<SPAN CLASS="tab" STYLE="float: left;">
+<!--#--><SPAN CLASS="measure">24</SPAN><BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--C-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>&#8226;</STRONG>&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--!--><SPAN><STRONG><SPAN CLASS="dynamics" LANG="it">D.C. al Fine</SPAN></STRONG></SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2</SPAN><BR /><BR />
+</SPAN>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
