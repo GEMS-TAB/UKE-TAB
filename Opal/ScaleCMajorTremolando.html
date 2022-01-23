@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#9753; C Major Scale [UKE-TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META name="keywords" content="C, diatonic, major, scale, tab, tablature, tremolando, tremolo, uke, ukulele">
+	<META name="description" content="Diatonic scale in the key of C major with tremolo picking.  One octave in ukulele tablature.">
+	<LINK rel="stylesheet" type="text/css" href="../../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="OpalBody">
+<DIV CLASS="OpalNavBar">
+<SPAN STYLE="float: left;">
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+			<div id="myDropdown" class="dropdown-content">
+				<A HREF="../index.html">Home</a>
+				<A HREF="../scalelist.html#CMajorOpal">Scales</a>
+				<A HREF="../syllabus.html#CMajorOpal">Syllabus</a>
+				<HR>
+				<A HREF="../Pearl/Chord0000(Am7).html">Prev</A>
+				<A HREF="./HappyBirthday.html">Next</A>
+				<HR>
+				<A HREF="#" onclick="window.print();return false;">Print</A>
+			</div>
+	</div>
+	<SPAN CLASS = "dropbtn" STYLE="font-family: Acme, san-serif;"><A HREF="../Pearl/ScaleCMajor.html">Easier</A></SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+</SPAN>
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showTempo()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Tempo
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showStems()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Rhythm
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showCount()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Count
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showLyrics()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Lyrics
+	</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("BPM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "hidden") {
+				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLyrics() {
+		var x = document.getElementsByClassName("lyrics1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+	
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1 CLASS="HeaderUke" STYLE="float: left;">Diatonic Scale in C Major</H1>
+<H4 STYLE="font-family: 'Fredericka the Great'; font-weight: normal; display: inline-block; float: left; clear: left; color: inherit;">Tremolo picking</H4>
+<HR  STYLE="clear: both;">
+<SPAN CLASS="BPM">MM = 56 BPM</SPAN><BR /><BR />
+</DIV>
+<!-- First Phrase.  Measures 1-4 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 1 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&emsp;1</SPAN><BR />
+<!--1-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--2-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--3-->C&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;&#x253C;<BR />
+<!--4-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 2 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">2</SPAN><BR />
+<!--1-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--2-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;&#x253C;<BR />
+<!--3-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 3 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">3</SPAN><BR />
+<!--1-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--2-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--3-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 4 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">4</SPAN><BR />
+<!--1-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;&#x2510;<BR />
+<!--2-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--3-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<!-- First Phrase.  Measures 5-8 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 5 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&#x2007;5</SPAN><BR />
+<!--1-->A&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x252C;<BR />
+<!--2-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--3-->C&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--4-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 6 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">6</SPAN><BR />
+<!--1-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--2-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;<STRONG>1</STRONG>&#x2500;&#x253C;<BR />
+<!--3-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 7 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--#--><SPAN CLASS="measure">7</SPAN><BR />
+<!--1-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--2-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--3-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;&#x253C;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;&#x2007;&#x2515;&#x2501;&#x2537;&#x2501;&#x2537;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&plus;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&plus;&#x2007;4&#x2007;&plus;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 8 -->
+<SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">8</SPAN><BR />
+<!--1-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--2-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--3-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--4-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<DIV CLASS="lyrics1" STYLE="clear: left;">
+<H4>Solfège</H4>
+<P>
+<TABLE STYLE="border-collapse: collapse;">
+<!--8.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>   <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD>do&prime;</TD></TR>
+<!--7.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>   <TD></TD>  <TD></TD>  <TD></TD>  <TD>ti</TD></TR>
+<!--6.5--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>   <TD></TD>  <TD></TD>  <TD>&#x2007;</TD></TR>
+<!--6.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>   <TD></TD>  <TD>la</TD></TR>
+<!--5.5--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>   <TD>&#x2007;</TD></TR>
+<!--5.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD>sol</TD></TR>
+<!--4.5--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD>&#x2007;</TD></TR>
+<!--4.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD></TD>  <TD>fa</TD></TR>
+<!--3.0--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD></TD>  <TD>mi</TD></TR>
+<!--2.5--><TR><TD></TD> <TD></TD>  <TD></TD>  <TD>&#x2007;</TD></TR>
+<!--2.0--><TR><TD></TD> <TD></TD>  <TD>re</TD></TR>
+<!--1.5--><TR><TD></TD> <TD>&#x2007;</TD></TR>
+<!--1.0--><TR><TD>do</TD></TR>
+</TABLE>
+</P>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
