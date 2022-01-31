@@ -23,6 +23,9 @@
 					<A HREF="#" onclick="window.print();return false;">Print</A>
 					<HR>
 					<A HREF="https://www.bethsnotesplus.com/2014/10/amen-amen.html">Score</A>
+					<HR>
+					<A HREF="../../Turquoise/Amen(Solo).html">Guitar</A>
+				
 				</div>
 		</div>
 		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
@@ -42,6 +45,13 @@
       class="w3-button w3-display-topright">&times;</span>
 <H3>Hide | Show</H3>
 <UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" checked onclick="showStems()">
@@ -91,14 +101,14 @@ window.onclick = function(event) {
 </script>
 
 <script>
-	function showTempo() {
-		var x = document.getElementsByClassName("MM");
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
@@ -206,6 +216,13 @@ Anon.
 </DIV>
 <HR style="clear: both;">
 </DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:&#x2007;&#x2007;</td><td>F Major</td></tr>
+	</table>
+	</P>
+</DIV>
 <!-- First Phrase. Measures 1-4 -->
 <DIV STYLE="clear: left;">
 <!-- Measure 1 -->
@@ -285,7 +302,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;rest&#x2577;</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 8 -->
@@ -296,7 +313,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#xb7;&nbsp;&#x255B;&#x2515;&#xb7;&nbsp;&#x255B;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&plus;a2&nbsp;&nbsp;a3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&plus;a2&nbsp;&plus;a3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -321,7 +338,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2515;&#xb7;&nbsp;&#x255B;&#x2515;&#xb7;&nbsp;&#x255B;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&plus;a2&nbsp;&nbsp;a3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&plus;a2&nbsp;&plus;a3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 11 -->
@@ -343,7 +360,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#xb7;&nbsp;&#x255B;&#124;</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;a4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -379,7 +396,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;rest&#x2577;</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 16 -->
@@ -390,7 +407,7 @@ Anon.
 <!--C-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
 <!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rest</SPAN><BR />
-<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&plus;a2&nbsp;&nbsp;a3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<!--T--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -414,7 +431,7 @@ Anon.
 		<TD></TD><TD>Amen.</TD>
 	</TR>	
 	<TR>
-		<TD>On Christmas morning</TD><TD></TD>
+		<TD>On Christmas morning.</TD><TD></TD>
 	</TR>
 	<TR>
 		<TD></TD><TD>Amen,<BR />Amen,<BR />Amen.</TD>
@@ -433,7 +450,7 @@ Anon.
 		<TD></TD><TD>Amen.</TD>
 	</TR>	
 	<TR>
-		<TD>Who marveled as His wisdom</TD><TD></TD>
+		<TD>Who marveled as His wisdom.</TD><TD></TD>
 	</TR>
 	<TR>
 		<TD></TD><TD>Amen,<BR />Amen,<BR />Amen.</TD>
@@ -453,6 +470,44 @@ Anon.
 	</TR>	
 	<TR>
 		<TD>Healing all the sick ones.</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen,<BR />Amen,<BR />Amen.</TD>
+	</TR>
+
+	<TR>
+		<TD>See Him at the garden,</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen.</TD>
+	</TR>	
+	<TR>
+		<TD>Praying to the Father,</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen.</TD>
+	</TR>	
+	<TR>
+		<TD>In deepest sorrow.</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen,<BR />Amen,<BR />Amen.</TD>
+	</TR>
+
+	<TR>
+		<TD>Yes, He died to save us,</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen.</TD>
+	</TR>	
+	<TR>
+		<TD>And He rose on Easter,</TD><TD></TD>
+	</TR>
+	<TR>
+		<TD></TD><TD>Amen.</TD>
+	</TR>	
+	<TR>
+		<TD>Now He lives forever.</TD><TD></TD>
 	</TR>
 	<TR>
 		<TD></TD><TD>Amen,<BR />Amen,<BR />Amen.</TD>
